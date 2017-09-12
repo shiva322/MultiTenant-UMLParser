@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block jumbotron %}
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+ {% block content %}
+
+  <!--h1>
+      {{what}}
+  </h1-->
+  <!--head>
+  <title>Django File Upload</title>
+  <style>
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #777777;
+      text-align: left
+    }
+    table {
+      margin: auto;
+    }
+  </style-->
+  <div class='container' style="height: 400px;">
+    <div class="row">
+        <div class="col-md-4">
+        <h2> Upload Source Code </h2>
+         <br />
+        <form action="{{request.build_absolute_uri}}upload/" method="POST" enctype="multipart/form-data">
+          <input type="file" name="file"/>
+          <br />
+          </div>
+           </div>
+             <br />
+               <br />
+       <div class="UML">
+          <input type="submit" value="Generate UML"/>
+        </form>
+      </div>
+    </div>    
+
+ 
+ {% endblock %}
+ 

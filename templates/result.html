@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+<!--div class="w3-grey w3-animate-zoom" style="padding:20px 50px;background-image:url('pic_boat_portrait.jpg');
+background-size:cover;"-->
+{% block jumbotron %}
+<br>
+<br/>
+
+{% endblock %}
+
+<!--div class="w3-section w3-row-padding"-->
+<!--div class="w3-twothird"-->
+    <!--div class="w3-card-4"-->
+  {% block content %}
+      <div class="row">
+        <div class="col-md-6">
+          <h3 style="font-style:italic;position: relative;left: 20%;color: lightslategrey" >UML Output</h3>
+          <br/>
+        {% load staticfiles %} 
+        <img src={% static imagefile %} alt="UMLOutput" style="width:50%;position: relative;left: 10% ">
+        </div>
+        <div class="col-md-6">
+        <h3 style="position: relative;left: 15%;"> Grading Form </h3>
+        <br/-->
+        <form method="POST" class="post-form" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br/>
+        <br/> 
+        <button type="submit" class="save btn btn-default">Save</button>
+      </form>
+      <br/>
+      <br/>
+      <br/>
+      </div>
+      </div>
+      
+{% endblock %}
+
+
+
+

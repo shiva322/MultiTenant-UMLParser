@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block jumbotron %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="height: 200px">
+      <div class="container" >
+        <h1>Welcome</h1>
+        <p> Kindly select the student id to proceed for grading..</p>
+        <!--p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p-->
+        
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+   <div class="row">
+        <div class="col-md-6">
+          <h2>Student 1</h2>
+          <h4> 011213513 </h4>
+          <p><a class="btn btn-sm btn-primary" href='tenant1/' role="button">Evaluate</a></p>
+        </div>
+        <div class="col-md-6">
+          <h2>Student 2</h2>
+          <h4> 011545313 </h4>
+          <p><a class="btn btn-sm btn-primary" href="tenant2/" role="button">Evaluate</a></p>
+       </div>
+    </div>
+     
+    <div class="row">
+        <div class="col-md-6">
+          <h2>Student 3</h2>
+          <h4> 011213513 </h4>
+          <p><a class="btn btn-sm btn-primary" href="tenant3/" role="button">Evaluate</a></p>
+        </div>
+        <div class="col-md-6">
+          <h2>Student 4</h2>
+          <h4> 01124473 </h4>
+          <p><a class="btn btn-sm btn-primary" href="tenant4/" role="button">Evaluate</a></p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
