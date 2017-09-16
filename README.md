@@ -1,5 +1,5 @@
 # MultiTenant-UMLParser
-MutliTenant UML parser SaaS application demonstrating 3-tier architecture with AWS Application Load balancing and Auto Scaling features along with specific data multi tenancy features using Amazon RDS.
+MutliTenant UML parser SaaS application in Django demonstrating 3-tier architecture with AWS Application Load balancing and Auto Scaling features along with specific data multi tenancy features using Amazon RDS.
      >   ![ScreenShot](https://raw.github.com/shiva322/MultiTenant-UMLParser/master/Architecture.png)
 
 
